@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-b23nf9^p7iij@w7&pi11l_zxp02ot&l@lkuvpy!o8&t35-_f72
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []# aqui habrai que poner el dominio que puede abrir el projecto
+ALLOWED_HOSTS = ['*']# aqui habrai que poner el dominio que puede abrir el projecto
 
 
 # Application definition
@@ -123,7 +123,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = '/static/'
-
+STATIC_ROOT = BASE_DIR/ "staticfiles"
 STATICFILES_DIRS = [
 BASE_DIR/ "static"
 ]
